@@ -1,3 +1,2 @@
-## [0.0.1] - TODO: Add release date.
+## [0.0.1] - test package publish and the function
 
-* TODO: Describe initial release.

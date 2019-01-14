@@ -1,8 +1,8 @@
 name: screen_adaptor
 description: flutter mobile screen adaptor.
 version: 0.0.1
-author:
-homepage:
+author: NealST<m13710224694@163.com>
+homepage: https://github.com/NealST/flutter_screen_adaptor.git
 
 environment:
   sdk: ">=2.0.0-dev.68.0 <3.0.0"

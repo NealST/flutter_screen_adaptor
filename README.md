@@ -1,14 +1,36 @@
 # screen_adaptor
 
-A new Flutter package project.
+A flutter screen_adaptor tool.
 
 ## Getting Started
 
-This project is a starting point for a Dart
-[package](https://flutter.io/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+This library is designed to solve the problem of flutter screen adaptor. The default UI sketch width is 750px, based on this width, you can use this tool as follows: 
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+```
+// import
+import 'package:screen_adaptor/screen_adaptor.dart'
+
+// used in ui code
+// 100 is the ui sketch size
+Container(
+  width: Fpx.to(100)
+)
+
+// 1px problem
+Container(
+  decoration: BoxDecoration(border: Border.all(color: Colors.blue, width: Fpx.one()))
+)
+
+// get screen width
+Fpx.vw()
+
+// get screen height
+Fpx.vh()
+
+```
+if your ui sketch width is not 750px, such as 375px. you need set the ui width first through
+
+```
+Fpx.init(375)
+```
+
